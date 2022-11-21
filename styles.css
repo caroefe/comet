@@ -1,0 +1,476 @@
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  background-image: url('/img/estrellasFondo.png');
+  background-color: #10052d;
+}
+
+
+
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: 'Inter', sans-serif;
+}
+
+h2 {
+  font-weight:bolder;
+}
+
+span{
+  font-weight: bold;
+}
+
+header {
+  height: 108px;
+  background-color: #000035;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+
+
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+nav a {
+  font-family: "Titan One", cursive;
+  color: white;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: #6002a3;
+}
+
+
+/*Hero*/
+.hero {
+
+  position: relative;
+  justify-content: center;
+  min-height: 100vh;
+  color: #fff;
+  text-align: center;
+
+}
+
+.hero .background-image {
+  background-image: url('/img/banner.png');
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 1;
+}
+
+
+
+
+.hero a.btn {
+  padding: 20px 46px;
+  position: absolute;
+  top: 83%;
+  left: 23%;
+  transform: translate(-50%, -50%);
+
+}
+
+.hero h1 {
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  border-radius: 100px;
+  color: #feb12d;
+  font-size: 110px;
+  font-weight: 90;
+  margin-bottom: 15px;
+  z-index: 2;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.hero h1 span {
+  line-height: 60%;
+  display: block;
+  font-size:97px;
+}
+
+
+
+.hero p{
+position: absolute;
+  top: 63%;
+  left: 13%;
+  font-size: 30px;
+  font-weight: 100%;
+  list-style: none;
+  line-height: 10px;
+  z-index: 4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a.btn {
+  color: #6002a3;
+  font-weight: bold;
+  border-radius: 50px;
+  text-transform: uppercase;
+  border-style: solid;
+  border-width: 5px;
+  border-color:rgba(255, 255, 255, 0.589);
+  background-color:  #feb12d;
+  text-align: center;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: btnAnimado;
+  animation-timing-function: cubic-bezier(0.28, 0.84, 0.42, 1);
+  z-index: 2;
+}
+
+
+.hero a.btn:hover {
+  background-color: #2196F3;
+}
+
+@keyframes btnAnimado {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+
+  30% {
+    transform: scale(0.9, 1.1) translateY(-100px);
+  }
+
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+/*Quienes somos*/
+
+.media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.media img {
+  height: 350px;
+}
+
+
+.media .content {
+  flex: 1;
+  padding: 10px;
+  align-items: center;
+}
+
+
+/*quienes somos*/
+
+
+.QueComet {
+  text-align: center;
+  width: 720px;
+  padding: 60px;
+  margin: auto;
+  background-image: url();
+}
+
+.quienesSomos .contenedor {
+  background-color: #2195f3ed;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+.quienesSomos .contenedor .texto-foto {
+  font-size: 20px;
+  text-align: left;
+  float: right;
+  position: relative;
+  width: 47%;
+  margin-top: 120px;
+  line-height: 50px;
+
+}
+
+.quienesSomos article {
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.quienesSomos .contenedor article figure img {
+  width: 50%;
+  height: 50%;
+}
+
+/*quienes somos 2.0*/
+
+.somos {
+  background-color: #2195f3bb;
+  padding: 5px 0;
+}
+.somos img{
+
+width: 25%;
+
+}
+.somos .grid {
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.somos p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.somos .grid li {
+
+  list-style: none;
+  padding: 50px;
+  flex-basis: 50%;
+  text-align: center;
+
+}
+
+.somos .grid li p {
+  font-size: 20px;
+
+}
+
+.somos .grid li h3 {
+  font-size: 30px;
+  margin: 25px 0;
+}
+
+
+
+/*beneficios*/
+
+.beneficios {
+  background-color: #a683ffe3;
+  padding: 5px 0;
+  margin-top: 5%;
+}
+
+.beneficios .grid {
+  padding: 0 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.beneficios p {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.beneficios .grid li {
+
+  list-style: none;
+  padding: 50px;
+  flex-basis: 50%;
+  text-align: center;
+
+}
+
+.beneficios .grid li p {
+  font-size: 20px;
+
+}
+
+.beneficios .grid li h3 {
+  font-size: 30px;
+  margin: 25px 0;
+}
+
+
+/*Flecha*/
+.flecha {
+  display: block;
+  width: 50px;
+  height: 50px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #2196F3;
+  position: fixed;
+  z-index: 2;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 40px;
+  color: white;
+  opacity: .80;
+  transition: .05s ease-in;
+}
+
+.flecha:hover {
+  opacity: 1;
+  bottom: 35px;
+  right: 15px;
+  transition: .3s ease-out;
+  background-color: #feb12d;
+}
+
+/*Experiencias*/
+
+#Experiencias{
+  background-color: #ffffff2a;
+  padding-bottom: 8%;
+}
+
+.lasExperiencias {
+  text-align: center;
+  width: 720px;
+  padding: 60px 0;
+  margin: auto;
+}
+
+.lasExperiencias h3{
+
+font-size: x-large;
+
+}
+
+.galeria {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.experiencia {
+  text-align: center;
+  background-color: #6002a3;
+
+  border-radius: 5px;
+  box-shadow: 0px 1px 6px 0px rgb(0, 0, 0 /40%);
+
+}
+
+.perfiles img {
+  border-radius: 5px;
+}
+
+
+/*mapa*/
+
+.contenedor{
+  padding-top: 2%;
+    background-color: #2195f3dc;
+  }
+  
+  .ubicacion  {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  
+  
+  .ubicacion .contenedor {
+  
+    background-image: url('/img/mapaMockup.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  
+  }
+  
+  
+  
+  
+  .ubicacion .contenedor .objetos iframe {
+    position: relative;
+    z-index: 1;
+    border-radius: 20px;
+    margin-left: 520px;
+    margin-top: 130px;
+
+  }
+
+
+/*Footer*/
+footer {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #02142b;
+  color: #fff;
+  padding: 20px 0;
+  flex-shrink: 0;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer ul li {
+  margin-left: 16px;
+  list-style: none;
+}
+
+footer p {
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.6;
+  align-self: center;
+}
+
+
