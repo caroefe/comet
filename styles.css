@@ -7,7 +7,7 @@ html {
 
 body {
   color: white;
-  background-image: url('/img/estrellasFondo.png');
+  background-image: url('./img/estrellasFondo.png');
   background-color: #10052d;
 }
 
@@ -75,7 +75,7 @@ nav li:hover {
 }
 
 .hero .background-image {
-  background-image: url('/img/banner.png');
+  background-image: url('./img/banner.png');
   position: absolute;
   top: 0;
   left: 0;
@@ -217,8 +217,10 @@ a.btn {
 /*quienes somos*/
 
 
+
+
 .quienesSomos .contenedor {
-  background-color: rgba(33, 149, 243, 0.89);
+  background-color: #2195f3ed;
   text-align: center;
   align-items: center;
   padding: 10px;
@@ -416,7 +418,7 @@ font-size: x-large;
   
   .ubicacion .contenedor {
   
-    background-image: url('/img/mapaMockup.png');
+    background-image: url('./img/mapaMockup.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
